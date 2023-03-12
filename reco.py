@@ -17,7 +17,6 @@ def recognize_speech():
         
     try:
         text = recognizer.recognize_google(audio)
-        return text
     except sr.UnknownValueError:
         return "Could not understand audio"
     except sr.RequestError as e:
